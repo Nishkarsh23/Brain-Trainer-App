@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         playAgainButton.setVisibility(View.INVISIBLE);
         resultTextView.setText("");
 
-        new CountDownTimer(30100,1000) {
+        new CountDownTimer(30100,1000) { //countdown timer
 
             @Override
             public void onTick(long l) {
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void newQuestion() {
-        Random rand = new Random();
+        Random rand = new Random(); // Random number
 
         int a = rand.nextInt(21);
         int b = rand.nextInt(21);
